@@ -1,34 +1,47 @@
-AI News Summarizer
-Project Description
-This project is a Node.js utility that fetches article content from a URL and generates a concise title and summary using AI models. It is ideal for news aggregation, briefing tools, and content analysis.
+# AI News Summarizer
 
-Setup
-To run the project on your local machine, follow these steps:
+## Project Description
 
-Clone the Repository:
+This project is a Node.js utility that fetches article content from a given URL and leverages AI models to generate a concise title and summary. It's an ideal solution for various applications such as news aggregation platforms, briefing tools, and content analysis systems.
 
-git clone <repository-url> # Paste your repository URL here
-cd ai-news-summarizer
+## Features
 
-Install Dependencies:
-Install the project dependencies by running the following command:
+* **URL-based Summarization:** Easily summarize articles by simply providing their URL.
+* **Customizable Summary Length:** Specify the approximate word count for the generated summaries.
+* **AI-Powered Summaries:** Utilizes advanced AI models (GPT-4o) for intelligent and relevant content extraction.
+* **Local Storage:** Automatically saves generated summaries (title, summary, URL, and timestamp) to a local `summaries.json` file.
+* **User-Friendly Interface:** A simple web interface built with Express.js and Bootstrap 5.3 for easy interaction.
 
-npm install
+## Setup
 
-Create .env File:
-In the root directory of your project, create a file named .env and add your OpenAI API key in the following format:
+To get this project up and running on your local machine, please follow these steps:
 
-OPENAI_API_KEY=YOUR_ACTUAL_OPENAI_API_KEY
+1.  **Clone the Repository:**
+    Start by cloning the project repository to your local system.
 
-Remember to replace YOUR_ACTUAL_OPENAI_API_KEY with your actual OpenAI API key.
+    ```bash
+    git clone <repository-url> # Replace with your actual repository URL
+    cd ai-news-summarizer
+    ```
 
-Running the Application
-After installing all dependencies and configuring the .env file, use the following command to start the application:
+2.  **Install Dependencies:**
+    Navigate into the project directory and install all the necessary Node.js packages.
 
+    ```bash
+    npm install
+    ```
+
+3.  **Create `.env` File:**
+    For secure handling of your API key, create a file named `.env` in the root directory of your project. Add your OpenAI API key to this file as shown below:
+
+    ```
+    OPENAI_API_KEY=YOUR_ACTUAL_OPENAI_API_KEY
+    ```
+    **Important:** Remember to replace `YOUR_ACTUAL_OPENAI_API_KEY` with your valid OpenAI API key.
+
+## Running the Application
+
+Once you have installed all dependencies and configured your `.env` file, you can start the application using the following command:
+
+```bash
 npm start
-
-Once the server has successfully started, you will see the following message in your terminal:
-
-Sunucu http://localhost:3000 adresinde çalışıyor
-
-Open your browser and navigate to http://localhost:3000 to start using the application. Paste the news URL, specify the desired summary word count, and click the "Summarize" button. The summarized news items will be listed on the page.
