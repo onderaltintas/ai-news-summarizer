@@ -1,0 +1,87 @@
+/* public/style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure rounded corners apply to content */
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form-control.rounded-pill {
+    border-radius: 50px !important;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn-primary.rounded-pill {
+    border-radius: 50px !important;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #007bff, #0056b3);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary.rounded-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.list-group-item h6 {
+    color: #343a40;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item small {
+    color: #888;
+    font-size: 0.85em;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3em;
+}
+
+.alert-danger {
+    border-radius: 10px;
+}

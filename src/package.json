@@ -1,0 +1,19 @@
+{
+  "name": "ai-news-summarizer",
+  "version": "1.0.0",
+  "description": "A Node.js utility that fetches article content from a URL and generates a concise title and summary using ai models. Ideal for news aggregation, briefing tools, and content analysis.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.51.0",
+    "dotenv": "^16.4.5"
+  }
+}
