@@ -1,7 +1,7 @@
 /* public/style.css */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #f0f2f5; /* Açık gri arka plan */
     color: #333;
 }
 
@@ -10,14 +10,15 @@ body {
 }
 
 h1 {
-    color: #007bff;
+    color: #007bff; /* Mavi başlık */
     font-weight: 700;
 }
 
 .card {
     border: none;
     border-radius: 15px;
-    overflow: hidden; /* Ensure rounded corners apply to content */
+    overflow: hidden; /* Köşelerin düzgün görünmesini sağlar */
+    background-color: #fff; /* Kartın arka planını beyaz yapar */
 }
 
 .card-title {
@@ -35,7 +36,7 @@ h1 {
     border-radius: 50px !important;
     padding: 0.75rem 1.5rem;
     font-weight: 600;
-    background-image: linear-gradient(to right, #007bff, #0056b3);
+    background-image: linear-gradient(to right, #007bff, #0056b3); /* Mavi gradient */
     border: none;
     transition: all 0.3s ease;
 }
@@ -45,8 +46,15 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
+/* Özet listesi container'ı için stil */
+#summaryList {
+    background-color: #ffffff; /* Listeyi içeren ul elementinin arka planını beyaz yapar */
+    border-radius: 10px; /* Kartın içindeki liste için yuvarlak köşeler */
+    padding: 0; /* Varsayılan padding'i sıfırla, list-group-item kendi padding'ini yönetecek */
+}
+
 .list-group-item {
-    background-color: #fff;
+    background-color: #fff; /* Her bir liste öğesinin arka planı beyaz */
     border: 1px solid #e0e0e0;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -55,7 +63,7 @@ h1 {
 }
 
 .list-group-item:hover {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Hover durumunda hafif gri */
     transform: translateX(5px);
 }
 
