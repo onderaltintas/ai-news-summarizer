@@ -1,3 +1,7 @@
+## License
+This project is licensed under the **Whatever You Want Public License (WTYWPL) Version 1.0**.
+See the [LICENSE](LICENSE) file for full details.
+
 # AI News Summarizer
 
 ## Project Description
